@@ -1,5 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 body {
-    background-color: LightGray;
+    /*background-color: LightGray;*/
 }
 div {
     border: 1px solid Chocolate;
@@ -13,12 +21,14 @@ div {
     width: 970px;
     height: 70px;
     margin: 0 auto;
+	padding: 0px 15px;
 }
 
 .top-navigation .links {
     float: right;
     font-family: 'Roboto', sans-serif;
     color: #838994;
+	letter-spacing: 0.03em;
     font-size: 16px;
     margin-top: 25px;
     -webkit-font-smoothing: antialiased;
@@ -27,7 +37,8 @@ div {
     display: inline-block;
     margin-left: 25px;
 }
-.top-navigation .links .active {
+
+.top-navigation .links > .active {
     color: #4c5058;
     font-weight: 500;
 }
@@ -41,11 +52,38 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
+	text-align: center;
 }
-.big-button {
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h1, .introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+.content button{
+	width: 9.688rem;
+    background-color: red;
+    border-color: #f15a29;
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+	display: block;
+	margin:0 auto;
 }
+.content button: hover{
+	cursor: pointer;
+    color: #333333;
+}
+
+
